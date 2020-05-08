@@ -1,1 +1,24 @@
-// your ImageSlider code here!
+// add import React
+
+import React from 'react';
+
+class ImageSlider extends React.Component {
+    constructor(){
+        super()
+        this.state = {
+            currentSlideIndex: 0
+        }
+    }
+    render(){
+        return(
+            <h1>I am on slide {this.state.currentSlideIndex}</h1>
+        )
+    }
+}
+
+export default ImageSlider;
+//last step to add to js file
+
+// {/* <ImageSlider />
+// ✓ should set the `currentSlideIndex` to 0 on its state
+// ✓ render the correct text */}
